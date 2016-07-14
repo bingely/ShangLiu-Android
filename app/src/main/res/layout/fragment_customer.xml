@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bgcolor"
+              android:orientation="vertical"
+              tools:context="com.meetrend.crm.fragment.ContactFragment">
+
+    <include layout="@layout/custom_commen_title"/>
+
+    <include layout="@layout/net_status_bar_info_top"/>
+
+    <include
+        layout="@layout/head_search_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="@dimen/space_17"
+        android:background="#f3f3f6"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="总客户:"
+            android:textColor="@color/tv_color_gray"
+            android:textSize="@dimen/text_size_16"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/tv_color_black"
+            android:textSize="@dimen/text_size_16"/>
+
+    </LinearLayout>
+
+    <!--到时候要切换这个组件-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/item_color"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

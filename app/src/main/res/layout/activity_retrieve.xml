@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f6"
+    android:orientation="vertical"
+    tools:context="com.shangliu.seacast.android.ui.activity.RetrieveActivity">
+
+    <include layout="@layout/custom_commen_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_20"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/space_17"
+                android:paddingRight="@dimen/space_17"
+                >
+
+                <TextView
+                    android:id="@+id/tv_descmobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号"
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_17"
+                    android:layout_toRightOf="@+id/tv_descmobile"
+                    android:background="@null"
+                    android:hint="输入手机号"
+                    />
+
+                <Button
+                    android:layout_width="74dp"
+                    android:layout_height="31dp"
+                    android:layout_alignParentRight="true"
+                    android:text="获取验证码"
+                    android:textSize="13sp"
+                    android:textColor="#4e9de1"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/space_12"
+                android:background="#b2b2b2">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="@dimen/space_17"
+                android:gravity="center"
+                android:paddingLeft="@dimen/space_17"
+                android:paddingRight="@dimen/space_17">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/log_in_icon_password"
+                    android:text="验证码"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_17"
+                    android:background="@null"
+                    android:hint="输入验证码"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:layout_width="326dp"
+            android:layout_height="48dp"
+            android:text="下一步"
+            android:background="@drawable/btn_blue"
+            android:textColor="#ffffff"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

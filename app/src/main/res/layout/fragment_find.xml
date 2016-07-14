@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:item="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bgcolor"
+              android:orientation="vertical"
+              tools:context="com.meetrend.crm.fragment.FindFragment">
+
+
+    <include layout="@layout/custom_commen_title"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:background="@color/item_color">
+
+        <com.shangliu.china.android.ui.widget.ComItemLayoutView
+            android:id="@+id/resource_pool"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:clickable="true"
+            item:ctitle="Call客资源池"
+            item:cicon="@drawable/find_icon_resource"
+
+            />
+
+        <View
+            style="@style/horizontal_yes_margin_divider_style"
+            android:layout_marginLeft="@dimen/comitem_margin_left"/>
+
+        <com.shangliu.china.android.ui.widget.ComItemLayoutView
+            android:id="@+id/me_follow"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:clickable="true"
+            item:ctitle="我关注的客户"
+            item:cicon="@drawable/find_icon_attention"
+            />
+
+        <View
+            style="@style/horizontal_yes_margin_divider_style"
+            android:layout_marginLeft="@dimen/comitem_margin_left"/>
+
+        <com.shangliu.china.android.ui.widget.ComItemLayoutView
+            android:id="@+id/recommend_clients"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:clickable="true"
+            item:ctitle="推荐给我的客户"
+            item:cicon="@drawable/find_icon_recommend"
+            />
+
+        <View
+            style="@style/horizontal_yes_margin_divider_style"
+            android:layout_marginLeft="@dimen/comitem_margin_left"/>
+
+        <com.shangliu.china.android.ui.widget.ComItemLayoutView
+            android:id="@+id/share_clients"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:clickable="true"
+            item:ctitle="共享给我的客户"
+            item:cicon="@drawable/find_icon_share"
+            />
+
+        <View
+            style="@style/horizontal_no_margin_divider_style"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:background="@color/item_color">
+
+        <com.shangliu.china.android.ui.widget.ComItemLayoutView
+            android:id="@+id/card_scaning"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:clickable="true"
+            item:ctitle="名片扫描"
+            item:cicon="@drawable/find_icon_scan"
+            />
+
+        <View
+            style="@style/horizontal_yes_margin_divider_style"
+            android:layout_marginLeft="@dimen/comitem_margin_left"/>
+
+        <com.shangliu.china.android.ui.widget.ComItemLayoutView
+            android:id="@+id/mobile_list"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:clickable="true"
+            item:ctitle="手机通讯录"
+            item:cicon="@drawable/find_icon_txl"
+            />
+
+        <View
+            style="@style/horizontal_no_margin_divider_style"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:background="@color/item_color">
+
+        <com.shangliu.china.android.ui.widget.ComItemLayoutView
+            android:id="@+id/integral_mall"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:clickable="true"
+            item:ctitle="积分商城"
+            item:cicon="@drawable/find_icon_store"
+            />
+
+        <View
+            style="@style/horizontal_no_margin_divider_style"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

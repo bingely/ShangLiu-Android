@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.shangliu.seacast.android.ui.activity.MobileAddressActivity">
+
+    <include layout="@layout/custom_commen_title"/>
+
+    <include
+        layout="@layout/head_search_layout"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/lv_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:overScrollMode="never"/>
+
+        <FrameLayout
+            android:layout_width="23dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="3dip"
+            android:layout_marginTop="8dip">
+
+            <com.shangliu.china.android.ui.widget.SideBar
+                android:id="@+id/alphat_layout"
+                xmlns:sidebar="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:alpha="0.5"
+                sidebar:isshowmorealphat="false"/>
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_alphabet_ui_tableview"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/alpat_dialog_tv_bg"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="40sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+
+        <View style="@style/horizontal_no_margin_divider_style"/>
+
+        <TextView
+            android:id="@+id/import_mobile_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="导入"
+            android:textColor="#3b9de7"/>
+    </FrameLayout>
+</LinearLayout>

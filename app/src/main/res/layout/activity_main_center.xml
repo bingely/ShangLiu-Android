@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clickable="true"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+    >
+
+    <include
+        layout="@layout/custom_commen_title"
+        android:focusable="true"
+        android:visibility="gone" />
+
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <include layout="@layout/layout_tab"/>
+
+</LinearLayout>

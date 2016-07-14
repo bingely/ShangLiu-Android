@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bgcolor"
+              android:orientation="vertical"
+              tools:context=".ChatFragment">
+
+    <include layout="@layout/custom_commen_title"/>
+
+    <com.shangliu.china.android.ui.widget.MyScrollview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:text="首次来访"
+                    android:textColor="#858585"
+                    android:textSize="@dimen/text_size_12"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20人"
+                    android:textColor="#858585"
+                    android:textSize="@dimen/text_size_12"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:text="回访:"
+                    android:textColor="#858585"
+                    android:textSize="@dimen/text_size_12"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18人"
+                    android:textColor="#858585"
+                    android:textSize="@dimen/text_size_12"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/item_color"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:text="快捷入口"
+                        android:textColor="@color/tv_color_black"
+                        android:textSize="@dimen/text_size_16"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/horizontal_no_margin_divider_style"
+                    android:layout_marginLeft="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="91dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <include layout="@layout/layout_tab_quickin"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/item_color"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:paddingLeft="@dimen/space_17"
+                    android:paddingRight="@dimen/space_17">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="提醒事项"
+                        android:textColor="@color/tv_color_black"
+                        android:textSize="@dimen/text_size_16"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="更多"
+                        android:textColor="#479de7"
+                        android:textSize="@dimen/text_size_15"/>
+                </RelativeLayout>
+
+                <View
+                    style="@style/horizontal_no_margin_divider_style"
+                    android:layout_marginLeft="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="192dp">
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/item_color"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:paddingLeft="@dimen/space_17"
+                    android:paddingRight="@dimen/space_17">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="楼书展示"
+                        android:textColor="@color/tv_color_black"
+                        android:textSize="@dimen/text_size_16"/>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/horizontal_no_margin_divider_style"
+                    android:layout_marginLeft="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="192dp">
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.shangliu.china.android.ui.widget.MyScrollview>
+</LinearLayout>

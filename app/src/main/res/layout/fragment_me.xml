@@ -1,0 +1,384 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:item="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bgcolor"
+              android:orientation="vertical"
+              tools:context="com.meetrend.crm.base.BaseFragment">
+
+    <include layout="@layout/custom_commen_title"/>
+
+    <com.shangliu.china.android.ui.widget.MyScrollview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="86dp"
+                    >
+
+                    <!--<com.beye.seacast.android.ui.widget.CircularImage
+                        android:id="@+id/user_image"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/default_icon"/>-->
+                    <ImageView
+                        android:id="@+id/user_image"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="17dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/default_icon"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/user_image"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="林明兵"
+                            android:textColor="#000000"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="13537688026"
+                            android:textColor="#8b8b8b"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="17dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/right_arrow"
+                    />
+
+                <View
+                    style="@style/horizontal_no_margin_divider_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/comitem_margin_left"
+                    />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="参考薪资(元)"
+                        android:textColor="@color/tv_color_black"
+                        android:textSize="@dimen/text_size_17"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:text="8000.00"
+                        android:textColor="@color/tv_color_gray"
+                        android:textSize="@dimen/text_size_17"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_6"
+                        android:text="仅供参考"
+                        android:textSize="@dimen/text_size_14"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/vertical_no_margin_divider_style"
+                    android:layout_marginLeft="12dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="13dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_salory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/basic_salary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="基本薪资(元)"
+                                android:textColor="@color/tv_color_black"
+                                android:textSize="@dimen/text_size_17"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/ll_salory"
+                                android:text="3500.00"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/ll_salory"
+                            android:layout_below="@+id/ll_salory"
+                            android:layout_marginTop="@dimen/space_10"
+                            android:text="员工基本底薪"
+                            android:textColor="@color/tv_color_gray"
+                            android:textSize="15sp"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/horizontal_no_margin_divider_style"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="13dp">
+
+                        <LinearLayout
+                            android:id="@+id/bonus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="奖金(元)"
+                                android:textColor="@color/tv_color_black"
+                                android:textSize="@dimen/text_size_17"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="48dp"
+                                android:text="4000.00"
+                                />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/bonus"
+                            android:layout_below="@+id/bonus"
+                            android:layout_marginTop="@dimen/space_10"
+                            android:text="按工龄和业绩结合计算"
+                            android:textColor="@color/tv_color_gray"
+                            android:textSize="15sp"/>
+
+
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/horizontal_no_margin_divider_style"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="13dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_other"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="其他(元)"
+                                android:textColor="@color/tv_color_black"
+                                android:textSize="@dimen/text_size_17"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="48dp"
+                                android:layout_toRightOf="@+id/ll_other"
+                                android:text="500.00"/>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/ll_other"
+                            android:layout_below="@+id/ll_other"
+                            android:layout_marginTop="@dimen/space_10"
+                            android:text="包含全勤奖、餐补等"
+                            android:textColor="@color/tv_color_gray"
+                            android:textSize="15sp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <com.shangliu.china.android.ui.widget.ComItemLayoutView
+                    android:id="@+id/rank_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:clickable="true"
+                    item:cicon="@drawable/me_icon_ranking"
+                    item:ctitle="排行榜"
+                    />
+
+                <View
+                    style="@style/horizontal_yes_margin_divider_style"
+                    android:layout_marginLeft="@dimen/comitem_margin_left"/>
+
+                <com.shangliu.china.android.ui.widget.ComItemLayoutView
+                    android:id="@+id/sign"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:clickable="true"
+                    item:cicon="@drawable/me_icon_sign"
+                    item:ctitle="签到"
+                    />
+
+                <View
+                    style="@style/horizontal_yes_margin_divider_style"
+                    android:layout_marginLeft="@dimen/comitem_margin_left"/>
+
+                <com.shangliu.china.android.ui.widget.ComItemLayoutView
+                    android:id="@+id/sms_template"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:clickable="true"
+                    item:cicon="@drawable/me_icon_message"
+                    item:ctitle="短信模版"
+                    />
+
+                <View
+                    style="@style/horizontal_no_margin_divider_style"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <com.shangliu.china.android.ui.widget.ComItemLayoutView
+                    android:id="@+id/modify_pwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:clickable="true"
+                    item:cicon="@drawable/me_icon_password"
+                    item:ctitle="修改密码"
+                    />
+
+                <View
+                    style="@style/horizontal_yes_margin_divider_style"
+                    android:layout_marginLeft="@dimen/comitem_margin_left"/>
+
+                <com.shangliu.china.android.ui.widget.ComItemLayoutView
+                    android:id="@+id/about_system"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:clickable="true"
+                    item:cicon="@drawable/me_icon_about"
+                    item:ctitle="关于"
+                    />
+
+                <View
+                    style="@style/horizontal_no_margin_divider_style"
+                    />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:id="@+id/login_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="退出登录"
+                    android:textColor="#ff4b1d"
+                    android:textSize="@dimen/text_size_17"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </com.shangliu.china.android.ui.widget.MyScrollview>
+</LinearLayout>

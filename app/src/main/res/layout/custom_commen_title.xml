@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--有什么快捷键没有48dp-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/happyblue"
+                >
+    <TextView
+        android:id="@+id/tv_left"
+        style="@style/commontitle"
+        android:layout_alignParentLeft="true"
+        android:text="左边"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/iv_left"
+        style="@style/commontitle"
+        android:layout_alignParentLeft="true"
+        android:text="左边"
+        android:visibility="gone"
+        android:src="@drawable/navigation_bar_icon_back"
+        />
+
+    <TextView
+        android:id="@+id/tv_middle"
+        style="@style/commontitle"
+        android:layout_centerHorizontal="true"
+        android:text="中间"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_right"
+        style="@style/commontitle"
+        android:layout_alignParentRight="true"
+        android:text="右边"
+        android:visibility="gone"/>
+
+</RelativeLayout>
